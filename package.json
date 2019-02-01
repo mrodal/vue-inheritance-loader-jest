@@ -1,0 +1,35 @@
+{
+  "name": "vue-inheritance-loader-jest",
+  "version": "0.1.0",
+  "description": "Jest transformer for vue-inheritance-loader",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrodal/vue-inheritance-loader-jest.git"
+  },
+  "keywords": [
+    "jest",
+    "inheritance",
+    "vue",
+    "vuejs",
+    "loader",
+    "webpack",
+    "vue-inheritance-loader"
+  ],
+  "author": "Matias Rodal (@mrodal)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrodal/vue-inheritance-loader-jest/issues"
+  },
+  "homepage": "https://github.com/mrodal/vue-inheritance-loader-jest#readme",
+  "dependencies": {
+    "deasync": "^0.1.14"
+  },
+  "peerDependencies": {
+    "vue-jest": "^3.0.2",
+    "vue-inheritance-loader": "^0.1.3"
+  }
+}
