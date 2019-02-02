@@ -1,6 +1,6 @@
 {
   "name": "vue-inheritance-loader-jest",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Jest transformer for vue-inheritance-loader",
   "main": "index.js",
   "scripts": {
