@@ -7,7 +7,14 @@ module.exports = {
   process: function (src, filePath, jestConfig) {
     let result = null;
     let basePath = path.dirname(filePath);
-    inheritance_loader(src, basePath).then(res => {
+
+    // jestConfig.moduleNameMapper example: [["^@/(.*)$", "C:\path\to\src\$1"]]. Turn it to {"^@/(.*)$": "C:\path\to\src\$1"}
+    let aliases = jestConfig.moduleNameMapper.reduce((accum, [k, v]) => {
+      accum[k] = v;
+      return accum
+    }, {});
+    aliases['__fromJest'] = true;
+    inheritance_loader(src, basePath, aliases).then(res => {
       result = res;
     });
 
